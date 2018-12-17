@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
+import { OrdersComponent } from './orders/orders.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    OrdersComponent,
+    CreateOrderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
