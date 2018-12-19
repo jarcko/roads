@@ -1,0 +1,19 @@
+@import "~src/variables";
+
+.toolbar {
+  background-color: $white;
+
+  .header-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: $gray8;
+}

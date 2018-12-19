@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OrdersComponent } from './orders/orders.component';
 import { CreateOrderComponent } from './create-order/create-order.component';
-import { MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule } from '@angular/material';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,10 @@ import { MatToolbarModule } from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatButtonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA_47QEBX6GWe101lgg5tCcS2yJra_IXQU'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

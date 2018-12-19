@@ -1,8 +1,13 @@
-  <mat-toolbar color="purple-green">
-    <span>Welcome to Roads App</span>
-  </mat-toolbar>
-  <h1>
+<mat-toolbar color="primary" class="toolbar">
+  <mat-toolbar-row class="header-container">
+    <h3>Welcome to Roads App</h3>
 
-  </h1>
-<router-outlet></router-outlet>
+    <a mat-button routerLink="/orders">Orders</a>
+    <a mat-button routerLink="/createOrder">New Order</a>
+  </mat-toolbar-row>
 
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
