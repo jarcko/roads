@@ -5,8 +5,8 @@ import { CreateOrderComponent } from 'src/app/create-order/create-order.componen
 
 const routes: Routes = [
   { path: '', redirectTo: '/orders', pathMatch: 'full' },
-  { path: 'orders', component: OrdersComponent },
-  { path: 'createOrder', component: CreateOrderComponent },
+  { path: 'orders', component: OrdersComponent, data: {animation: 'HomePage'} },
+  { path: 'createOrder', component: CreateOrderComponent, data: {animation: 'AboutPage'} },
 ];
 
 @NgModule({

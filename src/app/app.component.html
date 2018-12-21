@@ -1,13 +1,12 @@
-<mat-toolbar color="primary" class="toolbar">
+<mat-toolbar class="toolbar">
   <mat-toolbar-row class="header-container">
     <h3>Welcome to Roads App</h3>
-
-    <a mat-button routerLink="/orders">Orders</a>
-    <a mat-button routerLink="/createOrder">New Order</a>
+    <a class="nav-link" routerLink="/orders" routerLinkActive="active">Orders</a>
+    <a class="nav-link" routerLink="/createOrder" routerLinkActive="active">New Order</a>
   </mat-toolbar-row>
 
 </mat-toolbar>
 
-<div class="content">
-  <router-outlet></router-outlet>
+<div class="content" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
 </div>

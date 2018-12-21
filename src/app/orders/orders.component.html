@@ -1,3 +1,13 @@
-<p>
-  orders works!
-</p>
+<agm-map
+  [latitude]="defaultCoords.latitude"
+  [longitude]="defaultCoords.longitude"
+  [zoom]="zoom"
+  (mapClick)="onChooseLoc($event)">
+  <agm-marker *ngIf="location" [latitude]="location.latitude" [longitude]="location.longitude"></agm-marker>
+</agm-map>
+
+<form class="address-form">
+  <mat-form-field class="form-field">
+    <input matInput type="text" placeholder="Enter Address">
+  </mat-form-field>
+</form>
